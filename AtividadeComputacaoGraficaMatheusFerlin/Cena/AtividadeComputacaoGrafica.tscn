@@ -1,0 +1,717 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scripts/Bola.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/GlobalVariable.gd" type="Script" id=2]
+[ext_resource path="res://Tijolos.png" type="Texture" id=3]
+[ext_resource path="res://xadrez.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/ImagemSemFundo.png" type="Texture" id=5]
+[ext_resource path="res://Bloco.png" type="Texture" id=6]
+[ext_resource path="res://Fundo.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=6]
+resource_name = "Novo"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Tronco/Peitola/BracoEsquerdo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.10156, 43.3128 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Tronco/Peitola/BracoEsquerdo:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 89.7, 162.4 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Tronco/Peitola/BracoDir:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.0152893, -51.7416 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Skeleton2D/Tronco/Peitola/BracoDir:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 89.3, 36.4 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Skeleton2D/Tronco/Peitola:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.60173, -30.2832 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Skeleton2D/Tronco/Peitola:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 89.0034 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Skeleton2D/Tronco/Peitola/Pecoco:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -23.6437, 0.166565 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Skeleton2D/Tronco/Peitola/Pecoco:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.521 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Skeleton2D/Tronco:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 308, 230 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Skeleton2D/Tronco:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Skeleton2D/Tronco/PernaEsq:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -26.6155, 24.4153 ), Vector2( -25.9898, 8.25769 ), Vector2( -28.9877, 25.7412 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Skeleton2D/Tronco/PernaEsq:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 87.7 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Skeleton2D/Tronco/PernaDireita:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 20, 23 ), Vector2( 21.6119, 4.86444 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Skeleton2D/Tronco/PernaDireita:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 87.7 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Pulo"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Tronco/Peitola/BracoDir:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.0152893, -51.7416 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Tronco/Peitola/BracoDir:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 90.0, 31.8 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Tronco/PernaEsq:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -26.8071, 21.0323 ), Vector2( -26.5548, -3.05664 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Skeleton2D/Tronco/PernaEsq:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 87.7 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Poligonos/PernocaDireita:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 67, 80 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Poligonos/PernocaDireita:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Skeleton2D/Tronco/Peitola/BracoEsquerdo:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 90.0, 140.9 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Skeleton2D/Tronco/PernaDireita:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 19.2883, 13.5504 ), Vector2( 13.9738, -6.3418 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Tronco/Peitola/BracoEsquerdo:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 162.4 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Tronco/Peitola/BracoDir:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 36.4 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Tronco/PernaEsq:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -25.9898, 8.25769 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Skeleton2D/Tronco/PernaDireita:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 21.6119, 4.86444 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 22.5, 65 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 77.4508 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 36.5, 245.5 )
+
+[node name="TrabalhoFinal" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1114, -255 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+
+[node name="Xadrez" type="Sprite" parent="."]
+position = Vector2( 1237, -1254 )
+texture = ExtResource( 4 )
+
+[node name="Personagem" type="KinematicBody2D" parent="."]
+position = Vector2( 607, 633 )
+z_as_relative = false
+script = ExtResource( 1 )
+double_jump_strenght = 800.0
+
+[node name="Node2D" type="Node2D" parent="Personagem"]
+position = Vector2( -513, -285 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Poligonos" type="Node2D" parent="Personagem/Node2D"]
+
+[node name="BracimDireito" type="Polygon2D" parent="Personagem/Node2D/Poligonos"]
+position = Vector2( 2, 109 )
+scale = Vector2( 0.742924, 1 )
+texture = ExtResource( 5 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 458, 62, 525.359, 61.7225, 523.923, 42.1053, 565.072, 39.7129, 545, 66, 566.029, 87.5598, 526.794, 90.9091, 525.837, 78.9474, 457, 80 )
+uv = PoolVector2Array( 458, 62, 525.359, 61.7225, 523.923, 42.1053, 565.072, 39.7129, 545, 66, 566.029, 87.5598, 526.794, 90.9091, 525.837, 78.9474, 457, 80 )
+polygons = [ PoolIntArray( 0, 8, 7, 6, 5, 4, 3, 2, 1 ) ]
+bones = [ "Tronco", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Tronco/PernaDireita", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaDireita/PeDireito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoEsquerdo", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoDir", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Tronco/Peitola/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq/PeEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+
+[node name="BracimCanhoto" type="Polygon2D" parent="Personagem/Node2D/Poligonos"]
+position = Vector2( 688, 398 )
+rotation = -3.11192
+scale = Vector2( 0.903414, 1.10078 )
+texture = ExtResource( 5 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 469.225, 169.154, 471.569, 187.354, 518.66, 184.689, 519.139, 198.086, 562.201, 194.258, 539.431, 175.074, 558.373, 146.89, 516.746, 150.718, 518.182, 166.507 )
+uv = PoolVector2Array( 469.225, 169.154, 471.569, 187.354, 518.66, 184.689, 519.139, 198.086, 562.201, 194.258, 539.431, 175.074, 558.373, 146.89, 516.746, 150.718, 518.182, 166.507 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6, 7, 8 ) ]
+bones = [ "Tronco", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Tronco/PernaDireita", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaDireita/PeDireito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoEsquerdo", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Tronco/Peitola/BracoDir", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq/PeEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+
+[node name="Corpo" type="Polygon2D" parent="Personagem/Node2D/Poligonos"]
+position = Vector2( 3, 36.2025 )
+scale = Vector2( 1, 0.896433 )
+texture = ExtResource( 5 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 298.086, 115.789, 261.244, 157.416, 261.722, 237.321, 303, 253, 343.062, 237.321, 343.541, 154.545 )
+uv = PoolVector2Array( 298.086, 115.789, 261.244, 157.416, 261.722, 237.321, 301.914, 275.598, 343.062, 237.321, 343.541, 154.545 )
+polygons = [ PoolIntArray( 2, 3, 4, 5, 0, 1 ) ]
+bones = [ "Tronco", PoolRealArray( 1, 1, 1, 1, 1, 1 ), "Tronco/PernaDireita", PoolRealArray( 0, 0, 0, 0, 0, 0 ), "Tronco/PernaDireita/PeDireito", PoolRealArray( 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Tronco/Peitola/BracoEsquerdo", PoolRealArray( 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoDir", PoolRealArray( 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq", PoolRealArray( 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq/PeEsq", PoolRealArray( 0, 0, 0, 0, 0, 0 ) ]
+
+[node name="PernocaDireita" type="Polygon2D" parent="Personagem/Node2D/Poligonos"]
+position = Vector2( 67, 80 )
+scale = Vector2( 0.570207, 0.67991 )
+texture = ExtResource( 5 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 444.976, 264.115, 462.679, 247.847, 471.77, 258.852, 471.77, 320.574, 514.354, 321.053, 560.766, 347.368, 560.287, 350.718, 498.345, 352.782, 445.455, 354.545 )
+uv = PoolVector2Array( 444.976, 264.115, 462.679, 247.847, 471.77, 258.852, 471.77, 320.574, 514.354, 321.053, 560.766, 347.368, 560.287, 350.718, 498.345, 352.782, 445.455, 354.545 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6, 7, 8 ), PoolIntArray( 3, 8, 7, 6, 5, 4 ) ]
+bones = [ "Tronco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaDireita", PoolRealArray( 1, 1, 1, 1, 0, 0, 0, 0, 1 ), "Tronco/PernaDireita/PeDireito", PoolRealArray( 0, 0, 0, 1, 1, 1, 1, 1, 1 ), "Tronco/Peitola", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoEsquerdo", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoDir", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq/PeEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+
+[node name="PernocaEsquerda" type="Polygon2D" parent="Personagem/Node2D/Poligonos"]
+position = Vector2( 230, 75 )
+scale = Vector2( 0.612822, 0.70567 )
+texture = ExtResource( 5 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 70.3349, 262.679, 89.4737, 245.455, 96.1722, 259.809, 98.5646, 318.66, 141.148, 319.617, 185.646, 345.455, 185.167, 349.761, 72.7273, 352.632 )
+uv = PoolVector2Array( 70.3349, 262.679, 89.4737, 245.455, 96.1722, 259.809, 98.5646, 318.66, 141.148, 319.617, 185.646, 345.455, 185.167, 349.761, 72.7273, 352.632 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4, 5, 6, 7 ), PoolIntArray( 3, 7, 6, 5, 4 ) ]
+bones = [ "Tronco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaDireita", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaDireita/PeDireito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoEsquerdo", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoDir", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/Pecoco", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq", PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ), "Tronco/PernaEsq/PeEsq", PoolRealArray( 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5 ) ]
+
+[node name="Caixola" type="Polygon2D" parent="Personagem/Node2D/Poligonos"]
+position = Vector2( 35, 56 )
+scale = Vector2( 0.896835, 0.897865 )
+texture = ExtResource( 5 )
+skeleton = NodePath("../../Skeleton2D")
+polygon = PoolVector2Array( 262.201, 61.244, 263.158, 80.3828, 269.378, 92.823, 280.383, 104.785, 288.038, 109.569, 300.957, 111.483, 314.833, 109.091, 326.316, 99.043, 333.014, 88.0383, 337.799, 73.6842, 337.321, 56.9378, 333.014, 41.6268, 322.488, 28.7081, 313.397, 20.0957, 297.608, 19.6172, 282.775, 24.4019, 274.163, 33.0144, 266.029, 45.933 )
+uv = PoolVector2Array( 262.201, 61.244, 263.158, 80.3828, 269.378, 92.823, 280.383, 104.785, 288.038, 109.569, 300.957, 111.483, 314.833, 109.091, 326.316, 99.0431, 333.014, 88.0383, 337.799, 73.6842, 337.321, 56.9378, 333.014, 41.6268, 322.488, 28.7081, 313.397, 20.0957, 297.608, 19.6172, 282.775, 24.4019, 274.163, 33.0144, 266.029, 45.933 )
+polygons = [ PoolIntArray( 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 0, 1, 2, 3 ) ]
+bones = [ "Tronco", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Tronco/PernaDireita", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaDireita/PeDireito", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoEsquerdo", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/BracoDir", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/Peitola/Pecoco", PoolRealArray( 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ), "Tronco/PernaEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Tronco/PernaEsq/PeEsq", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="Personagem/Node2D"]
+
+[node name="Tronco" type="Bone2D" parent="Personagem/Node2D/Skeleton2D"]
+position = Vector2( 308, 230 )
+scale = Vector2( 1, 1.44 )
+rest = Transform2D( 1, 0, 0, 1.44, 308, 230 )
+
+[node name="PernaDireita" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco"]
+position = Vector2( 21.6119, 4.86444 )
+rotation = 1.53065
+rest = Transform2D( 0.0401318, 0.999194, -0.999194, 0.0401318, 20, 23 )
+
+[node name="PeDireito" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco/PernaDireita"]
+position = Vector2( 36.2275, -8.07635 )
+rotation = -1.58205
+scale = Vector2( 1.84495, 25.6631 )
+rest = Transform2D( -0.020756, -1.84483, 25.6615, -0.288715, 33.4558, -7.63379 )
+
+[node name="Peitola" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco"]
+position = Vector2( -0.60173, -30.2832 )
+rotation = 1.5534
+rest = Transform2D( 0.0173929, 0.999849, -0.999849, 0.0173929, -0.60173, -30.2832 )
+
+[node name="BracoEsquerdo" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco/Peitola"]
+position = Vector2( 1.10156, 43.3128 )
+rotation = 2.83441
+scale = Vector2( 3.58368, 1 )
+rest = Transform2D( -0.031884, 3.58354, -0.99996, -0.00889699, 1.10156, 43.3128 )
+
+[node name="BracoDir" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco/Peitola"]
+position = Vector2( -0.0152893, -51.7416 )
+rotation = 0.6353
+scale = Vector2( -2.72082, 4.20368 )
+rest = Transform2D( -0.109192, -2.71863, -4.20029, 0.168701, -0.0491943, -52.0108 )
+
+[node name="Pecoco" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco/Peitola"]
+position = Vector2( -23.6437, 0.166565 )
+rotation = 3.15069
+rest = Transform2D( -0.999959, -0.00909968, 0.00909968, -0.999959, -23.6437, 0.166565 )
+
+[node name="PernaEsq" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco"]
+position = Vector2( -25.9898, 8.25769 )
+rotation = 1.53065
+rest = Transform2D( 0.0401318, 0.999194, -0.999194, 0.0401318, -28, 24 )
+
+[node name="PeEsq" type="Bone2D" parent="Personagem/Node2D/Skeleton2D/Tronco/PernaEsq"]
+position = Vector2( 34.1401, 0.0419693 )
+rotation = -1.52609
+scale = Vector2( 2.48055, 10.9816 )
+rest = Transform2D( 0.110866, -2.47807, 10.9707, 0.490812, 34.8899, -3.94266 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Personagem/Node2D"]
+autoplay = "Novo"
+anims/Novo = SubResource( 6 )
+anims/Pulo = SubResource( 9 )
+anims/RESET = SubResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem"]
+visible = false
+position = Vector2( -359.5, -188 )
+shape = SubResource( 8 )
+
+[node name="Camera2D" type="Camera2D" parent="Personagem"]
+position = Vector2( -254, -190 )
+current = true
+offset_h = -1.0
+offset_v = -1.0
+
+[node name="Direita" type="Sprite" parent="."]
+position = Vector2( 310, 581 )
+rotation = -1.5708
+texture = ExtResource( 6 )
+
+[node name="direita2" type="RigidBody2D" parent="Direita"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Direita/direita2"]
+position = Vector2( 29.2908, 0.231812 )
+scale = Vector2( 3.34236, 3.18871 )
+shape = SubResource( 2 )
+
+[node name="direita" type="Area2D" parent="Direita"]
+position = Vector2( -200, 100 )
+scale = Vector2( 0.087, 40 )
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Direita/direita"]
+position = Vector2( 306.975, 0.131618 )
+scale = Vector2( 3.34236, 3.18871 )
+shape = SubResource( 2 )
+
+[node name="Plataforma1" type="Sprite" parent="."]
+position = Vector2( 528, 402 )
+rotation = 1.5708
+scale = Vector2( 0.24787, -0.123633 )
+texture = ExtResource( 3 )
+
+[node name="cima" type="Area2D" parent="Plataforma1"]
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma1/cima"]
+position = Vector2( -74.959, -0.133442 )
+scale = Vector2( 0.335264, 2.72055 )
+shape = SubResource( 2 )
+
+[node name="cima2" type="RigidBody2D" parent="Plataforma1"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma1/cima2"]
+position = Vector2( -28.8907, 0.732803 )
+scale = Vector2( 3.34236, 3.19735 )
+shape = SubResource( 2 )
+
+[node name="Plataforma2" type="Sprite" parent="."]
+position = Vector2( 792, 244 )
+rotation = 1.5708
+scale = Vector2( 0.310089, -0.13574 )
+texture = ExtResource( 3 )
+
+[node name="cima" type="Area2D" parent="Plataforma2"]
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma2/cima"]
+position = Vector2( -74.959, -0.133442 )
+scale = Vector2( 0.335264, 2.72055 )
+shape = SubResource( 2 )
+
+[node name="cima2" type="RigidBody2D" parent="Plataforma2"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma2/cima2"]
+position = Vector2( -28.8907, 0.732803 )
+scale = Vector2( 3.34236, 3.19735 )
+shape = SubResource( 2 )
+
+[node name="Plataforma3" type="Sprite" parent="."]
+position = Vector2( 1197, 374 )
+rotation = 1.5708
+scale = Vector2( 0.310089, -0.13574 )
+texture = ExtResource( 3 )
+
+[node name="cima" type="Area2D" parent="Plataforma3"]
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma3/cima"]
+position = Vector2( -74.959, -0.133442 )
+scale = Vector2( 0.335264, 2.72055 )
+shape = SubResource( 2 )
+
+[node name="cima2" type="RigidBody2D" parent="Plataforma3"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma3/cima2"]
+position = Vector2( -28.8907, 0.732803 )
+scale = Vector2( 3.34236, 3.19735 )
+shape = SubResource( 2 )
+
+[node name="Plataforma4" type="Sprite" parent="."]
+position = Vector2( 1689, 80 )
+rotation = 1.5708
+scale = Vector2( 0.310089, -0.13574 )
+texture = ExtResource( 3 )
+
+[node name="cima" type="Area2D" parent="Plataforma4"]
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma4/cima"]
+position = Vector2( -74.959, -0.133442 )
+scale = Vector2( 0.335264, 2.72055 )
+shape = SubResource( 2 )
+
+[node name="cima2" type="RigidBody2D" parent="Plataforma4"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma4/cima2"]
+position = Vector2( -28.8907, 0.732803 )
+scale = Vector2( 3.34236, 3.19735 )
+shape = SubResource( 2 )
+
+[node name="Plataforma5" type="Sprite" parent="."]
+position = Vector2( 988, -191 )
+rotation = 1.5708
+scale = Vector2( 0.310089, -0.13574 )
+texture = ExtResource( 3 )
+
+[node name="cima" type="Area2D" parent="Plataforma5"]
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma5/cima"]
+position = Vector2( -74.959, -0.133442 )
+scale = Vector2( 0.335264, 2.72055 )
+shape = SubResource( 2 )
+
+[node name="cima2" type="RigidBody2D" parent="Plataforma5"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma5/cima2"]
+position = Vector2( -28.8907, 0.732803 )
+scale = Vector2( 3.34236, 3.19735 )
+shape = SubResource( 2 )
+
+[node name="Plataforma6" type="Sprite" parent="."]
+position = Vector2( 1501, -366 )
+rotation = 1.5708
+scale = Vector2( 0.310089, -0.13574 )
+texture = ExtResource( 3 )
+
+[node name="cima" type="Area2D" parent="Plataforma6"]
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma6/cima"]
+position = Vector2( -74.959, -0.133442 )
+scale = Vector2( 0.335264, 2.72055 )
+shape = SubResource( 2 )
+
+[node name="cima2" type="RigidBody2D" parent="Plataforma6"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma6/cima2"]
+position = Vector2( -28.8907, 0.732803 )
+scale = Vector2( 3.34236, 3.19735 )
+shape = SubResource( 2 )
+
+[node name="Plataforma7" type="Sprite" parent="."]
+position = Vector2( 1873, -678 )
+rotation = 1.5708
+scale = Vector2( 0.310089, -0.13574 )
+texture = ExtResource( 3 )
+
+[node name="cima" type="Area2D" parent="Plataforma7"]
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma7/cima"]
+position = Vector2( -74.959, -0.133442 )
+scale = Vector2( 0.335264, 2.72055 )
+shape = SubResource( 2 )
+
+[node name="cima2" type="RigidBody2D" parent="Plataforma7"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataforma7/cima2"]
+position = Vector2( -28.8907, 0.732803 )
+scale = Vector2( 3.34236, 3.19735 )
+shape = SubResource( 2 )
+
+[node name="Direita2" type="Sprite" parent="."]
+position = Vector2( 1230, -955 )
+rotation = -1.5708
+texture = ExtResource( 6 )
+
+[node name="direita2" type="RigidBody2D" parent="Direita2"]
+mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Direita2/direita2"]
+position = Vector2( 29.2908, 0.231812 )
+scale = Vector2( 3.34236, 3.18871 )
+shape = SubResource( 2 )
+
+[node name="Final" type="Area2D" parent="Direita2"]
+position = Vector2( 16, -1 )
+space_override = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Direita2/Final"]
+position = Vector2( 26.5, 1.5 )
+shape = SubResource( 10 )
+
+[node name="bateu" type="Label" parent="."]
+margin_left = 67.0
+margin_top = 317.0
+margin_right = 447.0
+margin_bottom = 331.0
+text = "Você tem no máximo 3 pulos  seguidos, chegue até o topo!
+
+Se cair, voltará do começo"
+
+[node name="Ganhou" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 1188.0
+margin_top = -960.0
+margin_right = 1568.0
+margin_bottom = -912.0
+
+[connection signal="body_entered" from="Direita/direita" to="." method="_on_direita_body_entered"]
+[connection signal="body_entered" from="Plataforma1/cima" to="." method="_on_cima_body_entered"]
+[connection signal="body_entered" from="Plataforma2/cima" to="." method="_on_cima_body_entered"]
+[connection signal="body_entered" from="Plataforma3/cima" to="." method="_on_cima_body_entered"]
+[connection signal="body_entered" from="Plataforma4/cima" to="." method="_on_cima_body_entered"]
+[connection signal="body_entered" from="Plataforma5/cima" to="." method="_on_cima_body_entered"]
+[connection signal="body_entered" from="Plataforma6/cima" to="." method="_on_cima_body_entered"]
+[connection signal="body_entered" from="Plataforma7/cima" to="." method="_on_cima_body_entered"]
